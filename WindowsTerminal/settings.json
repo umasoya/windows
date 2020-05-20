@@ -1,0 +1,80 @@
+{
+    "theme": "dark",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "copyOnSelect": false,
+    "copyFormatting": false,
+    "confirmCloseAlltabs": false,
+    "launchMode": "maxized",
+    "profiles":
+    {
+        "defaults":
+        {
+            // Put settings here that you want to apply to all profiles.
+            "colorScheme": "Solarized Dark",
+            "fontFace": "Migu 1M"
+        },
+        "list":
+        [
+            {
+                // Make changes here to the powershell.exe profile.
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                // Make changes here to the cmd.exe profile.
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "コマンド プロンプト",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "name": "Ubuntu",
+                "hidden": false,
+                "icon": "D:\\img\\ico\\ubuntu_14143.ico",
+                "source": "Windows.Terminal.Wsl",
+                "commandline": "wsl.exe ~ -d Ubuntu",
+                "backgroundImage": "D:\\img\\ubuntu-dark.jpg"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+
+    "keybindings":
+    [   
+        // split pane
+        { "command": { "action": "splitPane", "split": "vertical", "profile": "Ubuntu" }, "keys": "alt+|" },
+        { "command": { "sction": "splitPane", "split": "horizontal", "profile": "Ubuntu" }, "keys": "alt+-" },
+        
+        // move pane
+        { "command": { "action": "moveFocus", "direction": "left" }, "keys": "alt+h" },
+        { "command": { "action": "moveFocus", "direction": "down" }, "keys": "alt+j" },
+        { "command": { "action": "moveFocus", "direction": "up" }, "keys": "alt+k" },
+        { "command": { "action": "moveFocus", "direction": "right" }, "keys": "alt+l" },
+        
+        // resize pane
+        { "command": { "action": "resizePane", "direction": "left" }, "keys": "alt+left" },
+        { "command": { "action": "resizePane", "direction": "down" }, "keys": "alt+down" },
+        { "command": { "action": "resizePane", "direction": "up" }, "keys": "alt+up" },
+        { "command": { "action": "resizePane", "direction": "right" }, "keys": "alt+right" },
+        
+        // close pane
+        { "command": "closePane", "keys": "alt+q" },
+        
+        // create tab
+        { "command": { "action": "newTab", "profile": "Ubuntu" }, "keys": "alt+t" },
+        
+        // close tab
+        { "command": "closeTab", "keys": "alt+w" },
+        
+        // find
+        { "command": "find", "keys": "alt+f" }
+    ]
+}
