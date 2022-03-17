@@ -4,13 +4,38 @@
     "copyOnSelect": false,
     "copyFormatting": false,
     "confirmCloseAlltabs": false,
-    "launchMode": "maxized",
+    "launchMode": "maximized",
+    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+    "schemes": [
+            {
+            "name": "Solarized Middle",
+            "foreground": "#839496",
+            "background": "#345f6a",
+            "cursorColor": "#FFFFFF",
+            "black": "#002B36",
+            "red": "#DC322F",
+            "green": "#859900",
+            "yellow": "#B58900",
+            "blue": "#268BD2",
+            "purple": "#D33682",
+            "cyan": "#2AA198",
+            "white": "#EEE8D5",
+            "brightBlack": "#073642",
+            "brightRed": "#CB4B16",
+            "brightGreen": "#586E75",
+            "brightYellow": "#657B83",
+            "brightBlue": "#839496",
+            "brightPurple": "#6C71C4",
+            "brightCyan": "#93A1A1",
+            "brightWhite": "#FDF6E3"
+        }
+    ],
     "profiles":
     {
         "defaults":
         {
             // Put settings here that you want to apply to all profiles.
-            "colorScheme": "Solarized Dark",
+            "colorScheme": "Solarized Light",
             "fontFace": "Migu 1M"
         },
         "list":
@@ -33,7 +58,6 @@
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "name": "Ubuntu",
                 "hidden": false,
-                "icon": "D:\\img\\ico\\ubuntu_14143.ico",
                 "source": "Windows.Terminal.Wsl",
                 "commandline": "wsl.exe ~ -d Ubuntu",
                 "backgroundImage": "D:\\img\\ubuntu-dark.jpg"
@@ -43,6 +67,15 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu-20.04",
+                "source": "Windows.Terminal.Wsl",
+                // "backgroundImage": "D:\\img\\ubuntu-dark.jpg",
+                "icon": "D:\\img\\ico\\ubuntu_14143.ico",
+                "commandline": "wsl.exe ~ -d Ubuntu-20.04"
             }
         ]
     },
@@ -50,8 +83,8 @@
     "keybindings":
     [   
         // split pane
-        { "command": { "action": "splitPane", "split": "vertical", "profile": "Ubuntu" }, "keys": "alt+|" },
-        { "command": { "sction": "splitPane", "split": "horizontal", "profile": "Ubuntu" }, "keys": "alt+-" },
+        { "command": { "action": "splitPane", "split": "vertical", "profile": "Ubuntu-20.04" }, "keys": "alt+|" },
+        { "command": { "sction": "splitPane", "split": "horizontal", "profile": "Ubuntu-20.04" }, "keys": "alt+-" },
         
         // move pane
         { "command": { "action": "moveFocus", "direction": "left" }, "keys": "alt+h" },
@@ -76,5 +109,6 @@
         
         // find
         { "command": "find", "keys": "alt+f" }
+        
     ]
 }
