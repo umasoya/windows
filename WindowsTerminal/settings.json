@@ -1,10 +1,10 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
+    "actions":
     [
         {
-            "command": 
+            "command":
             {
                 "action": "moveFocus",
                 "direction": "down"
@@ -12,7 +12,7 @@
             "keys": "alt+j"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "splitPane",
                 "split": "right"
@@ -20,7 +20,7 @@
             "keys": "alt+shift+\\"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "splitPane",
                 "split": "down"
@@ -28,14 +28,14 @@
             "keys": "alt+minus"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "closeTab"
             },
             "keys": "alt+w"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "moveFocus",
                 "direction": "right"
@@ -43,7 +43,7 @@
             "keys": "alt+l"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "moveFocus",
                 "direction": "left"
@@ -51,7 +51,7 @@
             "keys": "alt+h"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "moveFocus",
                 "direction": "up"
@@ -59,7 +59,7 @@
             "keys": "alt+k"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "resizePane",
                 "direction": "down"
@@ -67,7 +67,7 @@
             "keys": "alt+down"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "resizePane",
                 "direction": "left"
@@ -79,7 +79,7 @@
             "keys": "alt+f"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "resizePane",
                 "direction": "up"
@@ -91,7 +91,7 @@
             "keys": "alt+q"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "resizePane",
                 "direction": "right"
@@ -99,26 +99,30 @@
             "keys": "alt+right"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "newTab",
                 "profile": "Ubuntu"
             },
             "keys": "alt+t"
+        },
+        {
+            "command": "togglePaneZoom",
+            "keys": "alt+z"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{51855cb2-8cce-5362-8f54-464b92b32386}",
     "launchMode": "maximized",
-    "profiles": 
+    "profiles":
     {
-        "defaults": 
+        "defaults":
         {
             "adjustIndistinguishableColors": "indexed",
             "colorScheme": "Solarized Dark",
             "experimental.retroTerminalEffect": false,
-            "font": 
+            "font":
             {
                 "face": "Migu 1M",
                 "size": 12.0,
@@ -128,7 +132,7 @@
             "useAcrylic": true,
             "useAtlasEngine": true
         },
-        "list": 
+        "list":
         [
             {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -142,7 +146,7 @@
             },
             {
                 "colorScheme": "Solarized Dark",
-                "font": 
+                "font":
                 {
                     "face": "Migu 1M",
                     "size": 12.0
@@ -154,7 +158,7 @@
             }
         ]
     },
-    "schemes": 
+    "schemes":
     [
         {
             "background": "#0C0C0C",
